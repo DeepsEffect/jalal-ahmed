@@ -17,21 +17,19 @@ const SwitchMode = () => {
   return (
     <div>
       <Switch
-       isSelected={theme === "dark"}
-       onValueChange={() => setTheme(theme === "dark" ? "light" : "dark")}
-      // defaultSelected
-      size="lg"
-      color="secondary"
-      thumbIcon={({ isSelected, className }) =>
-        isSelected ? (
-          <MoonIcon className={className} />
-        ) : (
-          <SunIcon className={className} />
-        )
-      }
-    >
-      Dark mode
-    </Switch>
+        defaultSelected={theme === "dark"}
+        isSelected={theme === "dark"}
+        onValueChange={() => setTheme(theme === "dark" ? "light" : "dark")}
+        size="sm"
+        color="secondary"
+        thumbIcon={({ isSelected, className }) =>
+          isSelected ? (
+            <SunIcon className={className} />
+          ) : (
+            <MoonIcon className={className} />
+          )
+        }
+      />
     </div>
   );
 };

@@ -9,8 +9,6 @@ import {
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
-  Switch,
 } from "@nextui-org/react";
 import SwitchMode from "@/SwitchMode/SwitchMode";
 import Providers from "@/Providers";
@@ -20,16 +18,22 @@ export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
+    {
+      title: "About",
+      path: "/about",
+    },
+    {
+      title: "Skills",
+      path: "/skills",
+    },
+    {
+      title: "Projects",
+      path: "/projects",
+    },
+    {
+      title: "Contact",
+      path: "/contact",
+    },
   ];
 
   return (
@@ -44,67 +48,55 @@ export default function App() {
         />
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden pr-3" justify="center">
-        <NavbarBrand>
-          {/* <AcmeLogo /> */}
-          <p className="font-bold text-inherit">ACME</p>
-        </NavbarBrand>
-      </NavbarContent>
-
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarBrand>
-          {/* <AcmeLogo /> */}
-          <p className="font-bold text-inherit">ACME</p>
-        </NavbarBrand>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
-          </Link>
-        </NavbarItem>
+      <NavbarContent className="sm:hidden pr-3 gap-2" justify="center">
+      {/* Theme switch for mobile view */}
         <NavbarItem>
           <Providers>
             <SwitchMode />
           </Providers>
         </NavbarItem>
+        <NavbarBrand>
+          {/* <logo /> */}
+          <Link href="/">
+            <span className="font-bold text-inherit">Jalal Ahmed</span>
+          </Link>
+        </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
+      <NavbarContent className="hidden sm:flex gap-4" justify="end">
+        <NavbarBrand className="gap-2">
+          {/* <logo /> */}
+          <Link href="/">
+            <span className="font-bold ">Jalal Ahmed</span>
+          </Link>
+        </NavbarBrand>
+
+        {/* Theme switch for desktop view */}
         <NavbarItem>
-          <Button as={Link} color="warning" href="#" variant="flat">
-            Sign Up
-          </Button>
+          <Providers>
+            <SwitchMode />
+          </Providers>
         </NavbarItem>
+
+        {menuItems.map((menuItem) => (
+          <NavbarItem key={menuItem.path}>
+            <Link color="foreground" href={menuItem.path}>
+              {menuItem.title}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
 
       <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+        {menuItems.map((menuItem, index) => (
+          <NavbarMenuItem key={menuItems.path}>
             <Link
               className="w-full"
-              color={
-                index === 2
-                  ? "warning"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
-              href="#"
+              color={"foreground"}
+              href={menuItem.path}
               size="lg"
             >
-              {item}
+              {menuItem.title}
             </Link>
           </NavbarMenuItem>
         ))}
