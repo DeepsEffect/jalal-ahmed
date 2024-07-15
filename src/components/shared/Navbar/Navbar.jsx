@@ -68,7 +68,9 @@ export default function App() {
         <NavbarBrand className="gap-2">
           {/* logo */}
           <Link href="/">
-            <span className="font-bold text-primaryText">Jalal Ahmed</span>
+            <span className="font-bold text-primaryText text-lg">
+              Jalal Ahmed
+            </span>
           </Link>
         </NavbarBrand>
 
