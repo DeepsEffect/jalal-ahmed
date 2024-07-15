@@ -17,11 +17,10 @@ const SwitchMode = () => {
   return (
     <div>
       <Switch
-        defaultSelected={theme === "dark"}
         isSelected={theme === "dark"}
         onValueChange={() => setTheme(theme === "dark" ? "light" : "dark")}
         size="sm"
-        color="secondary"
+        color="primary"
         thumbIcon={({ isSelected, className }) =>
           isSelected ? (
             <SunIcon className={className} />

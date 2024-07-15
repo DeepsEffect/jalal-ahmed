@@ -12,7 +12,6 @@ import {
 } from "@nextui-org/react";
 import SwitchMode from "@/SwitchMode/SwitchMode";
 import Providers from "@/Providers";
-// import { AcmeLogo } from "./AcmeLogo.jsx";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -49,25 +48,27 @@ export default function App() {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden pr-3 gap-2" justify="center">
-      {/* Theme switch for mobile view */}
+        {/* Theme switch for mobile view */}
         <NavbarItem>
           <Providers>
             <SwitchMode />
           </Providers>
         </NavbarItem>
         <NavbarBrand>
-          {/* <logo /> */}
+          {/* logo  */}
           <Link href="/">
-            <span className="font-bold text-inherit">Jalal Ahmed</span>
+            <span className="font-bold text-inherit text-primaryText">
+              Jalal Ahmed
+            </span>
           </Link>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarBrand className="gap-2">
-          {/* <logo /> */}
+          {/* logo */}
           <Link href="/">
-            <span className="font-bold ">Jalal Ahmed</span>
+            <span className="font-bold text-primaryText">Jalal Ahmed</span>
           </Link>
         </NavbarBrand>
 
