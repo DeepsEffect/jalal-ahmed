@@ -8,10 +8,11 @@ import {
   NavbarMenu,
   NavbarContent,
   NavbarItem,
-  Link,
 } from "@nextui-org/react";
 import SwitchMode from "@/SwitchMode/SwitchMode";
 import Providers from "@/Providers";
+import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -19,19 +20,19 @@ export default function App() {
   const menuItems = [
     {
       title: "About",
-      path: "/about",
+      path: "about",
     },
     {
       title: "Skills",
-      path: "/skills",
+      path: "skills",
     },
     {
       title: "Projects",
-      path: "/projects",
+      path: "projects",
     },
     {
       title: "Contact",
-      path: "/contact",
+      path: "contact",
     },
   ];
 
@@ -82,25 +83,38 @@ export default function App() {
         </NavbarItem>
 
         {menuItems.map((menuItem) => (
-          <NavbarItem key={menuItem.path}>
-            <Link color="foreground" href={menuItem.path}>
+          <NavbarItem
+            className="cursor-pointer hover:opacity-80"
+            key={menuItem.path}
+          >
+            <ScrollLink
+              className="w-full h-full"
+              activeClass="active"
+              to={menuItem.path}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               {menuItem.title}
-            </Link>
+            </ScrollLink>
           </NavbarItem>
         ))}
       </NavbarContent>
 
       <NavbarMenu>
-        {menuItems.map((menuItem, index) => (
-          <NavbarMenuItem key={menuItems.path}>
-            <Link
-              className="w-full"
-              color={"foreground"}
-              href={menuItem.path}
-              size="lg"
+        {menuItems.map((menuItem) => (
+          <NavbarMenuItem key={menuItem.path}>
+            <ScrollLink
+              className="w-full "
+              to={menuItem.path}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
             >
               {menuItem.title}
-            </Link>
+            </ScrollLink>
           </NavbarMenuItem>
         ))}
       </NavbarMenu>
