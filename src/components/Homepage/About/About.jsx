@@ -16,7 +16,7 @@ const About = () => {
       >
         {/* content */}
         <div className="p-12">
-          <h2 className="font-bold text-4xl uppercase text-center mx-auto">
+          <h2 className="font-bold text-4xl uppercase text-center mx-auto text-primaryText">
             About me
           </h2>
           <div className="min-h-[400px] max-w-[950px] bg-background bg-opacity-30 backdrop-blur-lg mt-10 lg:p-20 space-y-4">
