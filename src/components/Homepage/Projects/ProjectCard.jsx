@@ -75,7 +75,7 @@ const ProjectCard = () => {
           <Button
             color="primary"
             size="sm lg:md"
-            variant="faded"
+            variant="flat"
             className="font-bold uppercase border-primary"
           >
             Live Site
@@ -83,7 +83,7 @@ const ProjectCard = () => {
           <Button
             color="primary"
             size="sm lg:md"
-            variant="faded"
+            variant="flat"
             className="font-bold uppercase border-primary"
           >
             GitHub Client
@@ -91,7 +91,7 @@ const ProjectCard = () => {
           <Button
             color="primary"
             size="sm lg:md"
-            variant="faded"
+            variant="flat"
             className="font-bold uppercase border-primary"
           >
             GitHub Server
