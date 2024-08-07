@@ -3,10 +3,12 @@ import SkillLogo from "./SkillLogo/SkillLogo";
 
 const Skills = () => {
   return (
-    <div id="skills" >
-      <h2 className="text-4xl font-bold text-center p-10 text-primaryText">My Skills</h2>
+    <div id="skills" className="min-h-[800px] mt-10 lg:mt-20">
+      <h2 className="text-4xl font-bold text-center p-10 text-primaryText">
+        My Skills
+      </h2>
       {/* skill logo section */}
-      <section className="grid grid-cols-3 lg:grid-cols-6 gap-10 container mx-auto">
+      <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 container mx-auto">
         {/* row 1 */}
         <SkillLogo
           src={

@@ -1,12 +1,15 @@
+import { Card, CardBody } from "@nextui-org/react";
 import Image from "next/image";
 import React from "react";
 
 const SkillLogo = ({ src, alt }) => {
   return (
-    <div className="bg-gradient-to-r from-accentColor bg-opacity-30 backdrop-blur-lg border border-opacity-10 box-border lg:px-6 lg:py-6 rounded">
-      <Image className="mx-auto" src={src} alt={alt} width={50} height={50} />
-      <h2 className="text-center font-bold">{alt}</h2>
-    </div>
+    <Card className="p-2 lg:p-4 hover:shadow-sm hover:shadow-primary ">
+      <CardBody>
+        <Image className="mx-auto" src={src} alt={alt} width={50} height={50} />
+        <h2 className="text-center font-bold mt-1">{alt}</h2>
+      </CardBody>
+    </Card>
   );
 };
 
