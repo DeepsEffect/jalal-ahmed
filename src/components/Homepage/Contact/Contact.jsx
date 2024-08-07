@@ -3,7 +3,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div id="contact" className="h-svh mt-10 lg:mt-20">
+    <div id="contact" className="mt-10 lg:mt-20">
       <h2 className="text-4xl font-bold text-center">Contact Me</h2>
       {/* contact form */}
       <section className="max-w-md mx-auto mt-10 ">
