@@ -6,7 +6,7 @@ const Skills = () => {
     <div id="skills" className="h-svh">
       <h2 className="text-4xl font-bold text-center p-10">My Skills</h2>
       {/* skill logo section */}
-      <section className=" grid grid-cols-6 gap-10 container mx-auto">
+      <section className="grid grid-cols-6 gap-10 container mx-auto">
         {/* row 1 */}
         <SkillLogo
           src={
