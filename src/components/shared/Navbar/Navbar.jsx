@@ -93,7 +93,7 @@ export default function App() {
               to={menuItem.path}
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-120}
               duration={500}
             >
               {menuItem.title}
@@ -110,7 +110,7 @@ export default function App() {
               to={menuItem.path}
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-120}
               duration={500}
             >
               {menuItem.title}
