@@ -6,8 +6,8 @@ export const Footer = () => {
     <footer className="mt-44">
       <Card radius="none">
         <CardBody>
-          <section className="text-center">
-            <ul className="flex gap-4 items-center justify-center font-semibold">
+          <section className="text-center space-y-2">
+            <ul className="flex gap-4 items-center justify-center font-semibold text-primaryText">
               <li>Github</li>
               <li>Linkedin</li>
               <li>Twitter/x</li>
@@ -20,7 +20,7 @@ export const Footer = () => {
         </CardBody>
         <Divider />
         <CardFooter>
-          <p className="text-center mx-auto">&#169; Jalal Ahmed 2024</p>
+          <p className="text-center mx-auto text-primaryText">&#169; Jalal Ahmed 2024</p>
         </CardFooter>
       </Card>
     </footer>
