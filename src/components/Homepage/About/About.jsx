@@ -1,7 +1,5 @@
 import { Avatar } from "@nextui-org/react";
-import Image from "next/image";
 import React from "react";
-// import avatar from '../../../assets/meghdol_github.jpg'
 
 const About = () => {
   return (
@@ -20,8 +18,8 @@ const About = () => {
           <h2 className="font-bold text-4xl uppercase text-center mx-auto text-white">
             About me
           </h2>
-          <div className="min-h-[400px] max-w-[950px] bg-[#121212] bg-opacity-30 backdrop-blur-lg mt-10 lg:mt-20  p-4 lg:p-20 space-y-4 border border-primary rounded-lg shadow-sm shadow-primary">
-            <Avatar src="./xprofile.jpg" className="w-32 h-32 text-large" />
+          <div className="min-h-[400px] max-w-[950px] bg-[#121212] bg-opacity-30 backdrop-blur-lg mt-10 lg:mt-20  p-4 lg:p-20 space-y-4 border border-primary rounded-lg shadow-sm shadow-primary mx-auto">
+            <Avatar src="./xprofile.jpg" className="w-32 h-32 text-large mx-auto" />
             <p className="text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
               laudantium vitae a in voluptatum ipsa accusantium omnis, placeat
