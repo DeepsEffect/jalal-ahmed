@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "projectName": "Job Nebula",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic tempora at aliquam nostrum rem porro consequatur laudantium odio, minus, ut voluptate non blanditiis!",
+      "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
+      "features": [
+        "Feature 1 description",
+        "Feature 2 description",
+        "Feature 3 description"
+      ],
+      "technologies": ["React", "JavaScript", "Tailwind CSS"],
+      "clientRepoLink": "https://github.com/username/job-nebula-client",
+      "serverRepoLink": "https://github.com/username/job-nebula-server",
+      "liveDemoLink": "https://job-nebula.example.com"
+    },
+    {
+      "id": 2,
+      "projectName": "Portfolio Hub",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.",
+      "images": ["portfolio1.jpg", "portfolio2.jpg", "portfolio3.jpg"],
+      "features": [
+        "Responsive design",
+        "Portfolio gallery",
+        "Contact form"
+      ],
+      "technologies": ["React", "CSS", "Bootstrap"],
+      "clientRepoLink": "https://github.com/username/portfolio-hub-client",
+      "serverRepoLink": "https://github.com/username/portfolio-hub-server",
+      "liveDemoLink": "https://portfolio-hub.example.com"
+    },
+    {
+      "id": 3,
+      "projectName": "E-commerce Store",
+      "description": "Vestibulum viverra dui non sapien tempor, ac commodo justo suscipit. Curabitur bibendum velit at augue.",
+      "images": ["store1.jpg", "store2.jpg", "store3.jpg"],
+      "features": [
+        "Product catalog",
+        "Shopping cart",
+        "Checkout process"
+      ],
+      "technologies": ["Angular", "Node.js", "Express"],
+      "clientRepoLink": "https://github.com/username/e-commerce-client",
+      "serverRepoLink": "https://github.com/username/e-commerce-server",
+      "liveDemoLink": "https://e-commerce.example.com"
+    },
+    {
+      "id": 4,
+      "projectName": "Social Network",
+      "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+      "images": ["social1.jpg", "social2.jpg", "social3.jpg"],
+      "features": [
+        "User profiles",
+        "Friend requests",
+        "Messaging system"
+      ],
+      "technologies": ["Vue.js", "Firebase", "Vuetify"],
+      "clientRepoLink": "https://github.com/username/social-network-client",
+      "serverRepoLink": "https://github.com/username/social-network-server",
+      "liveDemoLink": "https://social-network.example.com"
+    },
+    {
+      "id": 5,
+      "projectName": "Weather App",
+      "description": "A simple weather app using API integration to fetch and display weather data for various locations.",
+      "images": ["weather1.jpg", "weather2.jpg", "weather3.jpg"],
+      "features": [
+        "Current weather",
+        "Weather forecast",
+        "Search by location"
+      ],
+      "technologies": ["React", "API", "Material-UI"],
+      "clientRepoLink": "https://github.com/username/weather-app-client",
+      "serverRepoLink": "https://github.com/username/weather-app-server",
+      "liveDemoLink": "https://weather-app.example.com"
+    },
+    {
+      "id": 6,
+      "projectName": "Task Manager",
+      "description": "Manage your tasks efficiently with features like task categorization, deadlines, and reminders.",
+      "images": ["task1.jpg", "task2.jpg", "task3.jpg"],
+      "features": [
+        "Task creation and deletion",
+        "Categories and tags",
+        "Deadline reminders"
+      ],
+      "technologies": ["React", "Node.js", "MongoDB"],
+      "clientRepoLink": "https://github.com/username/task-manager-client",
+      "serverRepoLink": "https://github.com/username/task-manager-server",
+      "liveDemoLink": "https://task-manager.example.com"
+    }
+  ]
+  

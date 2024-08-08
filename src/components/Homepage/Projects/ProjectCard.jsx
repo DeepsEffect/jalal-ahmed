@@ -8,6 +8,7 @@ import {
   Link,
   Image,
   Button,
+  Chip,
 } from "@nextui-org/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
@@ -15,9 +16,21 @@ import "./styles.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-const ProjectCard = () => {
+
+const ProjectCard = ({ project }) => {
+  const {
+    id,
+    projectName,
+    description,
+    images,
+    technologies,
+    clientRepoLink,
+    serverRepoLink,
+    liveDemoLink,
+  } = project;
+
   return (
-    <Card className=" w-full lg:max-w-[400px] border border-borders shadow-sm shadow-primary">
+    <Card className=" w-full  border border-borders shadow-sm shadow-primary">
       <CardBody>
         <Swiper
           spaceBetween={30}
@@ -63,10 +76,17 @@ const ProjectCard = () => {
           </SwiperSlide>
         </Swiper>
 
-        <h2 className="text-2xl font-bold">Project name</h2>
+        <h2 className="text-2xl font-bold">{projectName}</h2>
+        <p>{description}</p>
         <p>
-          Make beautiful websites regardless of your design experience.Make
-          beautiful websites regardless of your design experience.
+          <div className="flex gap-2 flex-wrap">
+            <span className="font-bold">Technologies:</span>
+            {technologies?.map((tech) => (
+              <Chip key={tech} color="default">
+                {tech}
+              </Chip>
+            ))}
+          </div>
         </p>
       </CardBody>
       <Divider />
