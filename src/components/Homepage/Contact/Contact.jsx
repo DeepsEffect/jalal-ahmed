@@ -3,10 +3,10 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div id="contact" className="mt-10 lg:mt-20">
+    <div id="contact" className="mt-10 lg:mt-20 px-4">
       <h2 className="text-4xl font-bold text-center">Contact Me</h2>
       {/* contact form */}
-      <section className="max-w-md mx-auto mt-10 ">
+      <section className="w-full lg:max-w-md mx-auto mt-10 ">
         <form className="flex flex-col gap-4 ">
           <Input
             type="text"

@@ -31,7 +31,7 @@ const ProjectCard = ({ project }) => {
   } = project;
 
   return (
-    <Card className="border border-borders shadow-sm shadow-primary">
+    <Card className="border border-borders shadow-sm shadow-primary w-full">
       <CardHeader>
         <Swiper
           spaceBetween={30}

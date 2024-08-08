@@ -3,7 +3,7 @@ import SkillLogo from "./SkillLogo/SkillLogo";
 
 const Skills = () => {
   return (
-    <div id="skills" className="min-h-[800px] mt-10 lg:mt-20">
+    <div id="skills" className="min-h-[800px] mt-10 lg:mt-20 px-4">
       <h2 className="text-4xl font-bold text-center p-10 text-primaryText">
         My Skills
       </h2>

@@ -4,7 +4,7 @@ import React from "react";
 export const Footer = () => {
   return (
     <footer className="mt-44">
-      <Card radius="none">
+      <Card radius="none" className="w-full">
         <CardBody>
           <section className="text-center space-y-2">
             <ul className="flex gap-4 items-center justify-center font-semibold text-primaryText">

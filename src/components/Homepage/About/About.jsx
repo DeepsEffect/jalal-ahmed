@@ -11,10 +11,11 @@ const About = () => {
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1678247539441-05ad26a18343?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          objectFit: 'cover'
         }}
       >
         {/* content */}
-        <div className="py-12 min-h-[800px]">
+        <div className="py-12 min-h-[800px] px-4">
           <h2 className="font-bold text-4xl uppercase text-center mx-auto text-white">
             About me
           </h2>
