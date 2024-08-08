@@ -19,7 +19,7 @@ import "swiper/css/navigation";
 
 const ProjectCard = ({ project }) => {
   const {
-    id,
+    // id,
     projectName,
     description,
     images,
@@ -30,8 +30,8 @@ const ProjectCard = ({ project }) => {
   } = project;
 
   return (
-    <Card className=" w-full  border border-borders shadow-sm shadow-primary">
-      <CardBody>
+    <Card className="border border-borders shadow-sm shadow-primary">
+      <CardHeader>
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -56,40 +56,28 @@ const ProjectCard = ({ project }) => {
               width={400}
             />
           </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              alt="nextui logo"
-              height={400}
-              radius="sm"
-              src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-              width={400}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              alt="nextui logo"
-              height={400}
-              radius="sm"
-              src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-              width={400}
-            />
-          </SwiperSlide>
         </Swiper>
+      </CardHeader>
 
-        <h2 className="text-2xl font-bold">{projectName}</h2>
-        <p>{description}</p>
-        <p>
-          <div className="flex gap-2 flex-wrap">
-            <span className="font-bold">Technologies:</span>
-            {technologies?.map((tech) => (
-              <Chip key={tech} color="default">
-                {tech}
-              </Chip>
-            ))}
-          </div>
-        </p>
+      <CardBody>
+        <section className="space-y-2">
+          <h2 className="text-2xl font-bold ">{projectName}</h2>
+          <p className="">{description}</p>
+          <p>
+            <div className="flex gap-2 flex-wrap ">
+              <span className="font-bold">Technologies:</span>
+              {technologies?.map((tech) => (
+                <Chip key={tech} color="default" variant="faded">
+                  {tech}
+                </Chip>
+              ))}
+            </div>
+          </p>
+        </section>
       </CardBody>
+
       <Divider />
+
       <CardFooter>
         <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 w-full justify-between gap-2">
           <Button
