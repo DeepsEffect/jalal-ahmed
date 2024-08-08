@@ -3,7 +3,14 @@
     "id": 1,
     "projectName": "Job Nebula",
     "description": "A full-stack web application for job searching, filtering, applying, and posting.",
-    "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
+    "images": [
+      "https://i.ibb.co/4M1f2xH/Screenshot-2024-08-08-191626.jpg",
+      "https://i.ibb.co/fkS8tN9/job-Categories.jpg",
+      "https://i.ibb.co/Q6WhNqy/applied-Jobs.jpg",
+      "https://i.ibb.co/ZTsWph0/addJob.jpg",
+      "https://i.ibb.co/KK7Ymdy/joblisting.jpg",
+      "https://i.ibb.co/g9gS5NS/myJobs.jpg"
+    ],
     "features": [
       "User authentication system with Firebase",
       "Category-wise job listing, search, filter, apply, create, and manage jobs",
@@ -26,7 +33,11 @@
     "id": 2,
     "projectName": "Cloud BMS",
     "description": "Full-stack site for a Building Management System with user, member, and admin dashboard and Payment gateway system",
-    "images": ["portfolio1.jpg", "portfolio2.jpg", "portfolio3.jpg"],
+    "images": [
+      "https://i.ibb.co/TH3dPbc/homepage.jpg",
+      "https://i.ibb.co/RDKc9f7/admin-Dashboard.jpg",
+      "https://i.ibb.co/4tQGd5v/apartmnets.jpg"
+    ],
     "features": ["Dashboard Layout", "Role Based Users", "Amin Panel"],
     "technologies": [
       "React",

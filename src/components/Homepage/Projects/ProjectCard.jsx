@@ -53,10 +53,10 @@ const ProjectCard = ({ project }) => {
               <SwiperSlide key={idx}>
                 <Image
                   alt={`${projectName} image ${idx + 1}`}
-                  height={400}
-                  radius="sm"
+                  width={1920}
+                  height={1080}
+                  radius="none"
                   src={img}
-                  width={400}
                 />
               </SwiperSlide>
             </>
@@ -89,7 +89,7 @@ const ProjectCard = ({ project }) => {
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-full justify-between gap-2">
           {liveDemoLink && (
             <Tooltip content="live demo website link">
-              <Link href={liveDemoLink}>
+              <Link href={liveDemoLink} target="_blank">
                 <Button
                   color="primary"
                   size="sm lg:md"
