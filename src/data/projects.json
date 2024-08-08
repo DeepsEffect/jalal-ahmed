@@ -20,7 +20,7 @@
     ],
     "clientRepoLink": "https://github.com/DeepsEffect/job-nebula",
     "serverRepoLink": "https://github.com/DeepsEffect/job-nebula-server",
-    "liveDemoLink": "Livehttps://job-nebula.web.app/"
+    "liveDemoLink": "https://job-nebula.web.app/"
   },
   {
     "id": 2,
@@ -40,7 +40,7 @@
     ],
     "clientRepoLink": "https://github.com/DeepsEffect/cloud-bms",
     "serverRepoLink": "https://github.com/DeepsEffect/cloud-bms-server",
-    "liveDemoLink": "could-mbs.web.app"
+    "liveDemoLink": "https://could-mbs.web.app"
   },
   {
     "id": 3,

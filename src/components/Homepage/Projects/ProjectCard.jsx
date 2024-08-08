@@ -9,6 +9,7 @@ import {
   Image,
   Button,
   Chip,
+  Tooltip,
 } from "@nextui-org/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
@@ -47,23 +48,29 @@ const ProjectCard = ({ project }) => {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide>
-            <Image
-              alt="nextui logo"
-              height={400}
-              radius="sm"
-              src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-              width={400}
-            />
-          </SwiperSlide>
+          {images?.map((img, idx) => (
+            <>
+              <SwiperSlide key={idx}>
+                <Image
+                  alt={`${projectName} image ${idx + 1}`}
+                  height={400}
+                  radius="sm"
+                  src={img}
+                  width={400}
+                />
+              </SwiperSlide>
+            </>
+          ))}
         </Swiper>
       </CardHeader>
 
       <CardBody>
         <section className="space-y-2">
-          <h2 className="text-2xl font-bold ">{projectName}</h2>
-          <p className="">{description}</p>
-          <p>
+          <h2 className="text-xl lg:text-2xl font-semibold lg:font-bold">
+            {projectName}
+          </h2>
+          <p className="text-secondaryText">{description}</p>
+          <div>
             <div className="flex gap-2 flex-wrap ">
               <span className="font-bold">Technologies:</span>
               {technologies?.map((tech) => (
@@ -72,38 +79,56 @@ const ProjectCard = ({ project }) => {
                 </Chip>
               ))}
             </div>
-          </p>
+          </div>
         </section>
       </CardBody>
 
       <Divider />
 
       <CardFooter>
-        <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 w-full justify-between gap-2">
-          <Button
-            color="primary"
-            size="sm lg:md"
-            variant="flat"
-            className="font-bold uppercase border-primary"
-          >
-            Live Site
-          </Button>
-          <Button
-            color="primary"
-            size="sm lg:md"
-            variant="flat"
-            className="font-bold uppercase border-primary"
-          >
-            GitHub Client
-          </Button>
-          <Button
-            color="primary"
-            size="sm lg:md"
-            variant="flat"
-            className="font-bold uppercase border-primary"
-          >
-            GitHub Server
-          </Button>
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-full justify-between gap-2">
+          {liveDemoLink && (
+            <Tooltip content="live demo website link">
+              <Link href={liveDemoLink}>
+                <Button
+                  color="primary"
+                  size="sm lg:md"
+                  variant="flat"
+                  className="font-semibold lg:font-bold border-primary w-full"
+                >
+                  Live Site
+                </Button>
+              </Link>
+            </Tooltip>
+          )}
+          {clientRepoLink && (
+            <Tooltip content="client side GitHub repository link">
+              <Link href={clientRepoLink}>
+                <Button
+                  color="primary"
+                  size="sm lg:md"
+                  variant="flat"
+                  className="font-semibold lg:font-bold border-primary w-full"
+                >
+                  GitHub Client
+                </Button>
+              </Link>
+            </Tooltip>
+          )}
+          {serverRepoLink && (
+            <Tooltip content="server side GitHub repository link">
+              <Link href={serverRepoLink}>
+                <Button
+                  color="primary"
+                  size="sm lg:md"
+                  variant="flat"
+                  className="font-semibold lg:font-bold border-primary w-full"
+                >
+                  GitHub Server
+                </Button>
+              </Link>
+            </Tooltip>
+          )}
         </div>
       </CardFooter>
     </Card>

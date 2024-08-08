@@ -8,6 +8,6 @@
   }
 }
 .active{
-  @apply text-primary
+  @apply text-primary 
 }
 
