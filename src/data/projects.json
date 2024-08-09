@@ -95,31 +95,5 @@
     "clientRepoLink": "https://github.com/DeepsEffect/deep-resident",
     "serverRepoLink": null,
     "liveDemoLink": "https://deep-resident.web.app/"
-  },
-  {
-    "id": 5,
-    "projectName": "Weather App",
-    "description": "A simple weather app using API integration to fetch and display weather data for various locations.",
-    "images": ["weather1.jpg", "weather2.jpg", "weather3.jpg"],
-    "features": ["Current weather", "Weather forecast", "Search by location"],
-    "technologies": ["React", "API", "Material-UI"],
-    "clientRepoLink": "https://github.com/username/weather-app-client",
-    "serverRepoLink": "https://github.com/username/weather-app-server",
-    "liveDemoLink": "https://weather-app.example.com"
-  },
-  {
-    "id": 6,
-    "projectName": "Task Manager",
-    "description": "Manage your tasks efficiently with features like task categorization, deadlines, and reminders.",
-    "images": ["task1.jpg", "task2.jpg", "task3.jpg"],
-    "features": [
-      "Task creation and deletion",
-      "Categories and tags",
-      "Deadline reminders"
-    ],
-    "technologies": ["React", "Node.js", "MongoDB"],
-    "clientRepoLink": "https://github.com/username/task-manager-client",
-    "serverRepoLink": "https://github.com/username/task-manager-server",
-    "liveDemoLink": "https://task-manager.example.com"
   }
 ]
