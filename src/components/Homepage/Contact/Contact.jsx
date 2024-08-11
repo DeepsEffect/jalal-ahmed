@@ -1,7 +1,10 @@
 "use client";
-import { Button, Input, Textarea } from "@nextui-org/react";
+import { Button, Divider, Input, Textarea } from "@nextui-org/react";
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
+import phoneIcon from "../../../assets/icons/phone-call.png";
+import mailIcon from "../../../assets/icons/communication.png";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -55,52 +58,74 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="mt-10 lg:mt-20 px-4">
+    <div id="contact" className="mt-10 lg:mt-48 px-4">
       <h2 className="text-4xl font-bold text-center">Contact Me</h2>
-      <section className="w-full lg:max-w-md mx-auto mt-10">
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-          <Input
-            type="text"
-            name="name"
-            variant={"underlined"}
-            label="Your Name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            disabled={loading}
-          />
-          <Input
-            type="email"
-            name="email"
-            variant={"underlined"}
-            label="Your Email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            disabled={loading}
-          />
-          <Textarea
-            type="text"
-            name="message"
-            variant={"underlined"}
-            label="Your message"
-            value={formData.message}
-            onChange={handleChange}
-            maxLength={500}
-            required
-            disabled={loading}
-          />
-          <Button
-            color="primary"
-            variant="flat"
-            type="submit"
-            className="font-bold"
-            disabled={loading}
-            isLoading={loading}
-          >
-            {loading ? "Sending..." : "Send Message"}
-          </Button>
-        </form>
+      <section className="w-full lg:max-w-7xl min-h-[600px] flex flex-col justify-center  mx-auto mt-10 border-primary border rounded shadow-sm shadow-primary">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 ">
+          <div className="font-semibold text-medium border-b pb-10 lg:pb-0 lg:border-r lg:border-b-0 border-borders text-primaryText">
+            <div className="flex flex-col items-center justify-center w-full h-full">
+              <span className="flex gap-2 ">
+                <Image src={mailIcon} width={25} height={25} alt="mail" />
+                <p>jalal.ahmed.dev@gmail.com</p>
+              </span>
+              <span className="flex gap-2 ">
+                <Image src={phoneIcon} width={25} height={25} alt="phone" />
+                <p>+8801995612420</p>
+              </span>
+            </div>
+          </div>
+          <div className="px-2">
+            <h2 className="text-center font-semibold text-primaryText">
+              send a direct message
+            </h2>
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-4 max-w-md items-center justify-center mx-auto"
+            >
+              <Input
+                type="text"
+                name="name"
+                variant={"underlined"}
+                label="Your Name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                disabled={loading}
+              />
+              <Input
+                type="email"
+                name="email"
+                variant={"underlined"}
+                label="Your Email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                disabled={loading}
+              />
+              <Textarea
+                type="text"
+                name="message"
+                variant={"underlined"}
+                label="Your message"
+                value={formData.message}
+                onChange={handleChange}
+                maxLength={500}
+                required
+                disabled={loading}
+              />
+              <Button
+                color="primary"
+                variant="flat"
+                type="submit"
+                className="font-bold w-full"
+                disabled={loading}
+                isLoading={loading}
+              >
+                {loading ? "Sending..." : "Send Message"}
+              </Button>
+            </form>
+          </div>
+        </div>
         {status && (
           <p
             className={`mt-4 text-center ${
