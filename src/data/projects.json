@@ -4,12 +4,16 @@
     "projectName": "Job Nebula",
     "description": "A full-stack web application for job searching, filtering, applying, and posting.",
     "images": [
-      "https://i.ibb.co/4M1f2xH/Screenshot-2024-08-08-191626.jpg",
-      "https://i.ibb.co/fkS8tN9/job-Categories.jpg",
-      "https://i.ibb.co/Q6WhNqy/applied-Jobs.jpg",
-      "https://i.ibb.co/ZTsWph0/addJob.jpg",
-      "https://i.ibb.co/KK7Ymdy/joblisting.jpg",
-      "https://i.ibb.co/g9gS5NS/myJobs.jpg"
+      "https://s11.gifyu.com/images/SoGMW.jpg",
+      "https://s11.gifyu.com/images/SoGM8.jpg",
+      "https://s11.gifyu.com/images/SoGMg.jpg",
+      "https://s11.gifyu.com/images/SoGMc.jpg",
+      "https://s11.gifyu.com/images/SoGM6.jpg",
+      "https://s11.gifyu.com/images/SoGMQ.jpg",
+      "https://s11.gifyu.com/images/SoGM4.jpg",
+      "https://s11.gifyu.com/images/SoGMl.jpg",
+      "https://s11.gifyu.com/images/SoGMn.jpg",
+      "https://s11.gifyu.com/images/SoGMu.jpg"
     ],
     "features": [
       "User authentication system with Firebase",
