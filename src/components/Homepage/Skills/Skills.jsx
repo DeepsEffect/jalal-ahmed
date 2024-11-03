@@ -2,6 +2,90 @@ import React from "react";
 import SkillLogo from "./SkillLogo/SkillLogo";
 
 const Skills = () => {
+  const skillsData = [
+    {
+      name: "HTML",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+    },
+    {
+      name: "CSS",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+    },
+    {
+      name: "Javascript",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg",
+    },
+    {
+      name: "Typescript",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
+    },
+    {
+      name: "Tailwind CSS",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    },
+    {
+      name: "React.js",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    },
+    {
+      name: "Next.js",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    },
+    {
+      name: "Node.js",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+    },
+    {
+      name: "Express.js",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+    },
+    {
+      name: "MongoDB",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    },
+    {
+      name: "NextAuth",
+      logo: "https://next-auth.js.org/img/logo/logo-sm.png",
+    },
+    {
+      name: "oAuth",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oauth/oauth-original.svg",
+    },
+    {
+      name: "Firebase",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+    },
+    {
+      name: "Shadcn UI",
+      logo: "https://pbs.twimg.com/profile_images/1593304942210478080/TUYae5z7_400x400.jpg",
+    },
+    {
+      name: "NextUI",
+      logo: "https://raw.githubusercontent.com/nextui-org/nextui/main/apps/docs/public/isotipo.png",
+    },
+    {
+      name: "Material UI",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg",
+    },
+
+    {
+      name: "Figma",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+    },
+    {
+      name: "Git",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    },
+    {
+      name: "GitHub",
+      hardIcon: "githubIcon",
+    },
+    {
+      name: "NPM",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
+    },
+  ];
+
   return (
     <div id="skills" className="min-h-[800px] mt-10 lg:mt-20 px-4">
       <h2 className="text-4xl font-bold text-center p-10 text-primaryText">
@@ -9,100 +93,14 @@ const Skills = () => {
       </h2>
       {/* skill logo section */}
       <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 container mx-auto">
-        {/* row 1 */}
-        <SkillLogo
-          src={
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-          }
-          alt={"HTML"}
-        />
-        <SkillLogo
-          src={
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-          }
-          alt={"CSS"}
-        />
-        <SkillLogo
-          src={
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-          }
-          alt={"Tailwind"}
-        />
-        <SkillLogo
-          src={
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"
-          }
-          alt={"JavaScript"}
-        />
-        <SkillLogo
-          src={
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-          }
-          alt={"React.js"}
-        />
-        <SkillLogo
-          src={
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"
-          }
-          alt={"Next.js"}
-        />
-        {/* row 2 */}
-
-        <SkillLogo
-          src={
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-          }
-          alt={"Node.js"}
-        />
-        <SkillLogo
-          src={
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
-          }
-          alt={"Express.js"}
-        />
-        <SkillLogo
-          src={
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-          }
-          alt={"MongoDB"}
-        />
-        <SkillLogo
-          src={
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
-          }
-          alt={"Firebase"}
-        />
-        <SkillLogo
-          src={
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
-          }
-          alt={"Figma"}
-        />
-        <SkillLogo
-          src={
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg"
-          }
-          alt={"Vercel"}
-        />
-        {/* row 3 */}
-        <SkillLogo
-          src={
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
-          }
-          alt={"Git"}
-        />
-        <SkillLogo
-          src={
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-          }
-          alt={"GitHub"}
-        />
-        <SkillLogo
-          src={
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
-          }
-          alt={"NPM"}
-        />
+        {skillsData?.map((skill) => (
+          <SkillLogo
+            hardIcon={skill.hardIcon}
+            src={skill.logo}
+            alt={skill.name}
+            key={skill.skillName}
+          />
+        ))}
       </section>
     </div>
   );
