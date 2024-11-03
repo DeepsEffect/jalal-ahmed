@@ -8,7 +8,17 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        scroll: "scroll-indicator 1s ease-in-out infinite",
+      },
+      keyframes: {
+        "scroll-indicator": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(10px)" },
+        },
+      },
+    },
   },
   darkMode: "class",
   plugins: [

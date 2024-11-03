@@ -96,8 +96,7 @@
       "Firebase",
       "Aos package"
     ],
-    "clientRepoLink": "https://github.com/DeepsEffect/deep-resident",
-    "serverRepoLink": null,
+    "SourceRepoLink": "https://github.com/DeepsEffect/deep-resident",
     "liveDemoLink": "https://deep-resident.web.app/"
   }
 ]

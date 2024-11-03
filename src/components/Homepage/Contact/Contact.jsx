@@ -63,15 +63,17 @@ const Contact = () => {
       <section className="w-full lg:max-w-7xl min-h-[600px] flex flex-col justify-center  mx-auto mt-10 border-primary border rounded shadow-sm shadow-primary">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 ">
           <div className="font-semibold text-medium border-b pb-10 lg:pb-0 lg:border-r lg:border-b-0 border-borders text-primaryText">
-            <div className="flex flex-col items-center justify-center w-full h-full">
-              <span className="flex gap-2 ">
-                <Image src={mailIcon} width={25} height={25} alt="mail" />
-                <p>jalal.ahmed.dev@gmail.com</p>
-              </span>
-              <span className="flex gap-2 ">
-                <Image src={phoneIcon} width={25} height={25} alt="phone" />
-                <p>+8801995612420</p>
-              </span>
+            <div className="flex flex-col w-full h-full justify-center items-center">
+              <div className="text-left space-y-1">
+                <span className="flex gap-2 ">
+                  <Image src={mailIcon} width={25} height={25} alt="mail" />
+                  <p>jalal.ahmed.dev@gmail.com</p>
+                </span>
+                <span className="flex gap-1">
+                  <Image src={phoneIcon} width={25} height={25} alt="phone" />
+                  <p className="font-sans text-base">+8801995612420</p>
+                </span>
+              </div>
             </div>
           </div>
           <div className="px-2">

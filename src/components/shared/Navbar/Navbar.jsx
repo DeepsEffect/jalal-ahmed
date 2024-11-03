@@ -102,11 +102,11 @@ export default function App() {
         ))}
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu className=" text-center ">
         {menuItems.map((menuItem) => (
           <NavbarMenuItem key={menuItem.path}>
             <ScrollLink
-              className="w-full "
+              className="w-full text-2xl"
               to={menuItem.path}
               spy={true}
               smooth={true}
