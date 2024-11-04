@@ -101,7 +101,7 @@ const Introduction = () => {
             color="default"
             size="sm lg:md"
             variant="faded"
-            className="uppercase font-semibold text-white "
+            className="uppercase font-semibold"
           >
             <SquareArrowOutUpRight size={20} />
             View Resume

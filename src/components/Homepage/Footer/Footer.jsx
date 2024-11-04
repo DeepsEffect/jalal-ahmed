@@ -10,34 +10,68 @@ export const Footer = () => {
           <section className="text-center space-y-2">
             <ul className="flex gap-4 items-center justify-center font-semibold text-primaryText ">
               <Link
-                className="hover:text-secondaryText"
+                target="_blank"
+                className="hover:underline hover:text-secondaryText"
                 href={"https://github.com/DeepsEffect"}
               >
                 GitHub
               </Link>
               <Link
-                className="hover:text-secondaryText"
+                target="_blank"
+                className="hover:underline hover:text-secondaryText"
                 href={"https://www.linkedin.com/in/jalal-ahmed-dev"}
               >
                 Linkedin
               </Link>
               <Link
-                className="hover:text-secondaryText"
+                target="_blank"
+                className="hover:underline hover:text-secondaryText"
                 href={"https://x.com/JalalAhmed7845"}
               >
                 Twitter/X
               </Link>
             </ul>
             <p className="text-secondaryText font-medium">
-              Built with <span>Next.js</span>, <span>NextUI</span>,
-              <span> Tailwind</span>, and <span>Vercel</span>
+              Built with{" "}
+              <Link
+                target="_blank"
+                className="hover:font-semibold hover:underline"
+                href="https://nextjs.org/docs"
+              >
+                Next.js
+              </Link>
+              ,{" "}
+              <Link
+                target="_blank"
+                className="hover:font-semibold hover:underline"
+                href="https://nextui.org/docs/guide/introduction"
+              >
+                NextUI
+              </Link>
+              ,
+              <Link
+                target="_blank"
+                className="hover:font-semibold hover:underline"
+                href="https://tailwindcss.com"
+              >
+                {" "}
+                Tailwind
+              </Link>
+              , and{" "}
+              <Link
+                target="_blank"
+                className="hover:font-semibold hover:underline"
+                href="https://vercel.com/home"
+              >
+                Vercel
+              </Link>
             </p>
           </section>
         </CardBody>
         <Divider />
         <CardFooter>
           <p className="text-center mx-auto text-primaryText">
-            &#169; Jalal Ahmed 2024
+            &#169; Jalal Ahmed {new Date().getFullYear()}
           </p>
         </CardFooter>
       </Card>
