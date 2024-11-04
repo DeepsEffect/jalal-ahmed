@@ -31,40 +31,49 @@ const Introduction = () => {
         {/* socials */}
         <div className="flex justify-center items-start gap-4 my-2">
           <Tooltip content="GitHub">
-            <Button
-              size="sm"
-              variant="light"
-              isIconOnly
-              color="default"
-              aria-label="github"
-              className="text-white"
-            >
-              <FaGithub className="text-2xl" />
-            </Button>
+            <Link target="_black" href="https://github.com/DeepsEffect">
+              <Button
+                size="sm"
+                variant="light"
+                isIconOnly
+                color="default"
+                aria-label="github"
+                className="text-white"
+              >
+                <FaGithub className="text-2xl" />
+              </Button>
+            </Link>
           </Tooltip>
           <Tooltip content="Linkedin">
-            <Button
-              variant="light"
-              isIconOnly
-              size="sm"
-              color="default"
-              aria-label="linkedin"
-              className="text-white"
+            <Link
+              target="_black"
+              href="https://www.linkedin.com/in/jalal-ahmed-dev/"
             >
-              <FaLinkedin className="text-2xl" />
-            </Button>
+              <Button
+                variant="light"
+                isIconOnly
+                size="sm"
+                color="default"
+                aria-label="linkedin"
+                className="text-white"
+              >
+                <FaLinkedin className="text-2xl" />
+              </Button>
+            </Link>
           </Tooltip>
           <Tooltip content="Twitter">
-            <Button
-              size="sm"
-              variant="light"
-              isIconOnly
-              color="default"
-              aria-label="twitter"
-              className="text-white"
-            >
-              <FaXTwitter className="text-2xl" />
-            </Button>
+            <Link target="_black" href="https://x.com/JalalAhmed7845">
+              <Button
+                size="sm"
+                variant="light"
+                isIconOnly
+                color="default"
+                aria-label="twitter"
+                className="text-white"
+              >
+                <FaXTwitter className="text-2xl" />
+              </Button>
+            </Link>
           </Tooltip>
           <Tooltip content="Mail: jalal.ahmed.dev@gmail.com">
             <a target="_blank" href="mailto:jalal.ahmed.dev@gmail.com">
@@ -89,10 +98,10 @@ const Introduction = () => {
           }
         >
           <Button
-            color="primary"
+            color="default"
             size="sm lg:md"
             variant="faded"
-            className="uppercase font-semibold text-primaryText "
+            className="uppercase font-semibold text-white "
           >
             <SquareArrowOutUpRight size={20} />
             View Resume

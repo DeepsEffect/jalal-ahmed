@@ -6,7 +6,7 @@ import Providers from "@/Providers";
 const raleway = Raleway({ subsets: ["latin"], weight: ["400", "500"] });
 
 export const metadata = {
-  title: "Jalal Ahmed Portfolio",
+  title: "Jalal Ahmed's Portfolio",
   description: "Junior Front-End Web Developer",
 };
 

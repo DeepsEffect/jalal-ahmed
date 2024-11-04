@@ -17,7 +17,7 @@ const SkillLogo = ({ src, alt, hardIcon }) => {
           />
         )}
         {hardIcon === 'githubIcon' && (
-          <Github size={50} className="mx-auto"/>
+          <Github strokeWidth={1.25} size={50} className="mx-auto"/>
         )}
         <h2 className="text-center font-bold mt-1">{alt}</h2>
       </CardBody>

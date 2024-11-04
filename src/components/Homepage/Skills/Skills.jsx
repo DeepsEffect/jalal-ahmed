@@ -57,7 +57,7 @@ const Skills = () => {
     },
     {
       name: "Shadcn UI",
-      logo: "https://pbs.twimg.com/profile_images/1593304942210478080/TUYae5z7_400x400.jpg",
+      logo: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4",
     },
     {
       name: "NextUI",
