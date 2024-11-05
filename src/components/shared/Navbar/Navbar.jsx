@@ -13,6 +13,8 @@ import SwitchMode from "@/SwitchMode/SwitchMode";
 import Providers from "@/Providers";
 import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
+import logo from "../../../assets/images/logo.png";
+import Image from "next/image";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -58,9 +60,7 @@ export default function App() {
         <NavbarBrand>
           {/* logo  */}
           <Link href="/">
-            <span className="font-bold text-inherit text-primaryText">
-              Jalal Ahmed
-            </span>
+            <Image src={logo} width={35} height={35} alt="logo" />
           </Link>
         </NavbarBrand>
       </NavbarContent>
@@ -69,9 +69,7 @@ export default function App() {
         <NavbarBrand className="gap-2">
           {/* logo */}
           <Link href="/">
-            <span className="font-bold text-primaryText text-lg">
-              Jalal Ahmed
-            </span>
+            <Image src={logo} width={35} height={35} alt="logo" />
           </Link>
         </NavbarBrand>
 

@@ -1,6 +1,33 @@
 [
   {
     "id": 1,
+    "projectName": "DevBlog",
+    "description": "A blogging platform for developers. Users can browse, search, interact with, and create blogs across various categories related to development.",
+    "images": ["fjjf", "fjfjj", "jfj"],
+    "features": [
+      "Authentication: Secure login via Google OAuth and NextAuth.js credentials",
+      "Authentication: Secure login via Google OAuth and NextAuth.js credentials",
+      "Authentication: Secure login via Google OAuth and NextAuth.js credentials",
+      "Authentication: Secure login via Google OAuth and NextAuth.js credentials",
+      "Responsiveness: Fully responsive across all devices"
+    ],
+    "technologies": [
+      "Next.js",
+      "Tailwind",
+      "Next UI",
+      "Lucide React",
+      "TipTap Editor",
+      "React Toastify",
+      "Prism.js",
+      "Next.js API Routes",
+      "MongoDB",
+      "NextAuth.js"
+    ],
+    "SourceRepoLink": "https://github.com/DeepsEffect/DevBlog",
+    "liveDemoLink": "https://dev-blog-chi.vercel.app/"
+  },
+  {
+    "id": 2,
     "projectName": "Job Nebula",
     "description": "A full-stack web application for job searching, filtering, applying, and posting.",
     "images": [
@@ -32,30 +59,6 @@
     "clientRepoLink": "https://github.com/DeepsEffect/job-nebula",
     "serverRepoLink": "https://github.com/DeepsEffect/job-nebula-server",
     "liveDemoLink": "https://job-nebula.web.app/"
-  },
-  {
-    "id": 2,
-    "projectName": "Cloud BMS",
-    "description": "Full-stack site for a Building Management System with user, member, and admin dashboard and Payment gateway system",
-    "images": [
-      "https://i.ibb.co/TH3dPbc/homepage.jpg",
-      "https://i.ibb.co/RDKc9f7/admin-Dashboard.jpg",
-      "https://i.ibb.co/4tQGd5v/apartmnets.jpg"
-    ],
-    "features": ["Dashboard Layout", "Role Based Users", "Amin Panel"],
-    "technologies": [
-      "React",
-      "Tailwind",
-      "Firebase",
-      "MongoDB",
-      "Node Js",
-      "Express Js",
-      "MongoDB",
-      "Vercel"
-    ],
-    "clientRepoLink": "https://github.com/DeepsEffect/cloud-bms",
-    "serverRepoLink": "https://github.com/DeepsEffect/cloud-bms-server",
-    "liveDemoLink": "https://could-mbs.web.app"
   },
   {
     "id": 3,
