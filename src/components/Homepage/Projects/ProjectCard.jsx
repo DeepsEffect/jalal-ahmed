@@ -42,7 +42,7 @@ const ProjectCard = ({ project }) => {
         perspective={1500}
         transitionSpeed={1500}
         glareEnable={true}
-        glareMaxOpacity={0.10}
+        glareMaxOpacity={0.1}
         // glareColor="#fff"
         glarePosition="top"
         glareBorderRadius="20px"
@@ -126,7 +126,7 @@ const ProjectCard = ({ project }) => {
               )}
               {SourceRepoLink && (
                 <Tooltip content="GitHub repository link">
-                  <Link href={SourceRepoLink}>
+                  <Link href={SourceRepoLink} target="_blank">
                     <Button
                       color="primary"
                       size="sm lg:md"
@@ -141,7 +141,7 @@ const ProjectCard = ({ project }) => {
               )}
               {clientRepoLink && (
                 <Tooltip content="client-side GitHub repository link">
-                  <Link href={clientRepoLink}>
+                  <Link href={clientRepoLink} target="_blank">
                     <Button
                       color="primary"
                       size="sm lg:md"
@@ -156,7 +156,7 @@ const ProjectCard = ({ project }) => {
               )}
               {serverRepoLink && (
                 <Tooltip content="server-side GitHub repository link">
-                  <Link href={serverRepoLink}>
+                  <Link href={serverRepoLink} target="_blank">
                     <Button
                       color="primary"
                       size="sm lg:md"

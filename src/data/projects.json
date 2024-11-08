@@ -3,7 +3,15 @@
     "id": 1,
     "projectName": "DevBlog",
     "description": "A blogging platform for developers. Users can browse, search, interact with, and create blogs across various categories related to development.",
-    "images": ["fjjf", "fjfjj", "jfj"],
+    "images": [
+      "https://i.imgur.com/wrlLK37.jpeg",
+      "https://i.imgur.com/a1sAejB.jpeg",
+      "https://i.imgur.com/2ewg9PU.jpeg",
+      "https://i.imgur.com/00zeDe1.jpeg",
+      "https://i.imgur.com/WeYJQID.jpeg",
+      "https://i.imgur.com/h20nCh1.jpeg",
+      "https://i.imgur.com/KkISaCy.jpeg"
+    ],
     "features": [
       "Authentication: Secure login via Google OAuth and NextAuth.js credentials",
       "Authentication: Secure login via Google OAuth and NextAuth.js credentials",
@@ -29,18 +37,18 @@
   {
     "id": 2,
     "projectName": "Job Nebula",
-    "description": "A full-stack web application for job searching, filtering, applying, and posting.",
+    "description": "A full-stack web application for posting and applying for jobs. Users can search, filter, and browse jobs by category, apply directly, and post and manage job listings.",
     "images": [
-      "https://s11.gifyu.com/images/SoGMW.jpg",
-      "https://s11.gifyu.com/images/SoGM8.jpg",
-      "https://s11.gifyu.com/images/SoGMg.jpg",
-      "https://s11.gifyu.com/images/SoGMc.jpg",
-      "https://s11.gifyu.com/images/SoGM6.jpg",
-      "https://s11.gifyu.com/images/SoGMQ.jpg",
-      "https://s11.gifyu.com/images/SoGM4.jpg",
-      "https://s11.gifyu.com/images/SoGMl.jpg",
-      "https://s11.gifyu.com/images/SoGMn.jpg",
-      "https://s11.gifyu.com/images/SoGMu.jpg"
+      "https://i.imgur.com/1aEY3Cs.jpeg",
+      "https://i.imgur.com/eosZlc9.jpeg",
+      "https://i.imgur.com/m2cvb1c.jpeg",
+      "https://i.imgur.com/SNKYH6P.jpeg",
+      "https://i.imgur.com/OsXO157.jpeg",
+      "https://i.imgur.com/JsKasnf.jpeg",
+      "https://i.imgur.com/dIsxzgx.jpeg",
+      "https://i.imgur.com/b58ZTbB.jpeg",
+      "https://i.imgur.com/Xzebfcs.jpeg",
+      "https://i.imgur.com/ocu5yvc.jpeg"
     ],
     "features": [
       "User authentication system with Firebase",
@@ -63,8 +71,14 @@
   {
     "id": 3,
     "projectName": "Craft Spectrum",
-    "description": "A full-stack web application for showcasing homemade craft items.",
-    "images": ["store1.jpg", "store2.jpg", "store3.jpg"],
+    "description": "A full-stack web application for showcasing homemade crafts, allowing users to post, display, and manage their own creations in a personalized gallery.",
+    "images": [
+      "https://i.imgur.com/TKpYgfT.jpeg",
+      "https://i.imgur.com/6A6wFVQ.jpeg",
+      "https://i.imgur.com/9fh0adj.jpeg",
+      "https://i.imgur.com/VJWGCsC.jpeg",
+      "https://i.imgur.com/eOEvK7w.jpeg"
+    ],
     "features": [
       "User authentication system",
       "Add, remove, update, filter, delete craft items",

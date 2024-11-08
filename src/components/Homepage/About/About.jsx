@@ -30,8 +30,8 @@ const About = () => {
               practicing web development for the past 10 months. In that time,
               I&apos;ve worked with various technologies and built a few
               projects. Currently, I&apos;m focused on front-end development and
-              looking for a remote internship opportunity to apply my skills and
-              grow within a team environment
+              looking for an internship opportunity to apply my skills and grow
+              within a team environment.
             </p>
           </div>
         </div>
