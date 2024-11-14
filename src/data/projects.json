@@ -4,7 +4,7 @@
     "projectName": "DevBlog",
     "description": "A blogging platform for developers. Users can browse, search, interact with, and create blogs across various categories related to development.",
     "images": [
-      "https://i.imgur.com/wrlLK37.jpeg",
+      "https://i.imgur.com/FZFjoxR.jpeg",
       "https://i.imgur.com/a1sAejB.jpeg",
       "https://i.imgur.com/2ewg9PU.jpeg",
       "https://i.imgur.com/00zeDe1.jpeg",
@@ -21,13 +21,11 @@
     ],
     "technologies": [
       "Next.js",
-      "Tailwind",
       "Next UI",
-      "Lucide React",
+      "Tailwind",
+      "React Query",
       "TipTap Editor",
-      "React Toastify",
       "Prism.js",
-      "Next.js API Routes",
       "MongoDB",
       "NextAuth.js"
     ],
@@ -59,10 +57,10 @@
       "React",
       "Tailwind",
       "Material Tailwind",
-      "Node Js",
-      "Express Js",
-      "MongoDB",
-      "Vercel"
+      "Firebase",
+      "Node.js",
+      "Express.js",
+      "MongoDB"
     ],
     "clientRepoLink": "https://github.com/DeepsEffect/job-nebula",
     "serverRepoLink": "https://github.com/DeepsEffect/job-nebula-server",
@@ -70,8 +68,40 @@
   },
   {
     "id": 3,
+    "projectName": "Cloud-BMS",
+    "description": "A full-stack site for a Building Management System with user, member, and admin dashboard and Payment gateway system.",
+    "images": [
+      "https://i.imgur.com/eINRDmD.jpeg",
+      "https://i.imgur.com/tc2JfCx.jpeg",
+      "https://i.imgur.com/I6xidF4.jpeg",
+      "https://i.imgur.com/8iJ74UH.jpeg",
+      "https://i.imgur.com/Cv6sbCX.jpeg",
+      "https://i.imgur.com/BscxEfd.jpeg",
+      "https://i.imgur.com/vsGN29v.jpeg",
+      "https://i.imgur.com/xdsSxsw.jpeg",
+      "https://i.imgur.com/c9aWpgp.jpeg",
+      "https://i.imgur.com/0jh7cso.jpeg"
+    ],
+    "features": ["User Dashboard", "Member Dashboard", "Admin Dashboard"],
+    "technologies": [
+      "React",
+      "Tailwind",
+      "Firebase",
+      "Stripe",
+      "Node.js",
+      "Express Js",
+      "MongoDB",
+      "Vercel",
+      "Netlify"
+    ],
+    "clientRepoLink": "https://github.com/DeepsEffect/cloud-bms",
+    "serverRepoLink": "https://github.com/DeepsEffect/cloud-bms-server",
+    "liveDemoLink": "https://cloud-bms.netlify.app"
+  },
+  {
+    "id": 4,
     "projectName": "Craft Spectrum",
-    "description": "A full-stack web application for showcasing homemade crafts, allowing users to post, display, and manage their own creations in a personalized gallery.",
+    "description": "A web application for showcasing homemade crafts, allowing users to post, display, and manage their own creations in a personalized gallery.",
     "images": [
       "https://i.imgur.com/TKpYgfT.jpeg",
       "https://i.imgur.com/6A6wFVQ.jpeg",
@@ -87,33 +117,14 @@
     "technologies": [
       "React",
       "Tailwind",
-      " Node Js",
-      "Express Js",
+      "Firebase",
+      "Node.js",
+      "Express.js",
       "MongoDB",
-      "Vercel",
-      "Firebase"
+      "Vercel"
     ],
     "clientRepoLink": "https://github.com/DeepsEffect/craft-spectrum",
     "serverRepoLink": "https://github.com/DeepsEffect/craft-spectrum-server",
     "liveDemoLink": "https://deepseffect-craft-spectrum.web.app"
-  },
-  {
-    "id": 4,
-    "projectName": "Deep Resident",
-    "description": "A simple web application for discovering real estate properties.",
-    "images": ["social1.jpg", "social2.jpg", "social3.jpg"],
-    "features": [
-      "User authentication, profile management",
-      "Apartment management system: view, choose, and purchase apartments"
-    ],
-    "technologies": [
-      "React",
-      "Tailwind",
-      "Daisy UI",
-      "Firebase",
-      "Aos package"
-    ],
-    "SourceRepoLink": "https://github.com/DeepsEffect/deep-resident",
-    "liveDemoLink": "https://deep-resident.web.app/"
   }
 ]

@@ -27,11 +27,11 @@ const About = () => {
             />
             <p className="text-white text-lg text-center">
               I&apos;m a 22-year-old developer based in Bangladesh 🇧🇩,
-              practicing web development for the past 10 months. In that time,
-              I&apos;ve worked with various technologies and built a few
+              practicing web development for the past 10 months. During this
+              time, I&apos;ve worked with various technologies and built several
               projects. Currently, I&apos;m focused on front-end development and
-              looking for an internship opportunity to apply my skills and grow
-              within a team environment.
+              am looking for an internship to apply my skills and grow as a
+              developer within a team environment.
             </p>
           </div>
         </div>
