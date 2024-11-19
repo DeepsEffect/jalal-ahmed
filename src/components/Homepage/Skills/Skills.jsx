@@ -20,10 +20,6 @@ const Skills = () => {
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
     },
     {
-      name: "Tailwind CSS",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-    },
-    {
       name: "React.js",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
     },
@@ -31,6 +27,11 @@ const Skills = () => {
       name: "Next.js",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
     },
+    {
+      name: "Tailwind CSS",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    },
+
     {
       name: "Node.js",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
@@ -44,18 +45,6 @@ const Skills = () => {
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
     },
     {
-      name: "NextAuth",
-      logo: "https://next-auth.js.org/img/logo/logo-sm.png",
-    },
-    {
-      name: "oAuth",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oauth/oauth-original.svg",
-    },
-    {
-      name: "Firebase",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
-    },
-    {
       name: "Shadcn UI",
       logo: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4",
     },
@@ -63,11 +52,6 @@ const Skills = () => {
       name: "NextUI",
       logo: "https://raw.githubusercontent.com/nextui-org/nextui/main/apps/docs/public/isotipo.png",
     },
-    {
-      name: "Material UI",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg",
-    },
-
     {
       name: "Figma",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
@@ -79,10 +63,6 @@ const Skills = () => {
     {
       name: "GitHub",
       hardIcon: "githubIcon",
-    },
-    {
-      name: "NPM",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
     },
   ];
 
