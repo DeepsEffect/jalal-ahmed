@@ -67,8 +67,8 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skills" className="min-h-[800px] mt-10 lg:mt-20 px-4">
-      <h2 className="text-4xl font-bold text-center p-10 text-primaryText">
+    <div id="skills" className="mt-10 lg:mt-20 px-4">
+      <h2 className="text-4xl font-bold text-center text-primaryText uppercase mb-10">
         My Skills
       </h2>
       {/* skill logo section */}

@@ -5,10 +5,12 @@ import projects from "../../../data/projects.json";
 
 const Projects = () => {
   return (
-    <div id="projects">
-      <h2 className="text-4xl font-bold text-center mt-20">My Projects</h2>
+    <div id="projects" className="mt-10 lg:mt-20 px-4">
+      <h2 className="text-4xl font-bold text-center text-primaryText uppercase mb-10">
+        My Projects
+      </h2>
       {/* projects showcase */}
-      <section className="container mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 px-4 lg:px-0">
+      <section className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {projects?.map((project) => (
           <ProjectCard project={project} key={project.id} />
         ))}
