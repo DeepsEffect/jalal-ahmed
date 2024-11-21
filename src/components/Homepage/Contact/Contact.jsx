@@ -1,10 +1,7 @@
 "use client";
-import { Button, Divider, Input, Textarea } from "@nextui-org/react";
+import { Button, Input, Textarea, Tooltip } from "@nextui-org/react";
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import Image from "next/image";
-import phoneIcon from "../../../assets/icons/phone-call.png";
-import mailIcon from "../../../assets/icons/communication.png";
 import { Mail, Phone } from "lucide-react";
 
 const Contact = () => {
@@ -14,6 +11,7 @@ const Contact = () => {
     message: "",
   });
   const [status, setStatus] = useState(null);
+  const [copyState, setCopyState] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
@@ -58,6 +56,21 @@ const Contact = () => {
       );
   };
 
+  // handle click to copy
+  const handleClickToCopy = (text) => {
+    // clear the state before setting a new state
+    setCopyState(null);
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        setCopyState("Text copied to clipboard!");
+        setTimeout(() => setCopyState(null), 2000); // Clear status after 2 seconds
+      })
+      .catch((err) => {
+        console.error("Failed to copy text: ", err);
+      });
+  };
+
   return (
     <div id="contact" className="mt-10 lg:mt-20 px-4">
       <h2 className="text-4xl font-bold text-center mb-10 text-primaryText uppercase">
@@ -67,20 +80,41 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 ">
           <div className="font-semibold text-medium border-b pb-10 lg:pb-0 lg:border-r lg:border-b-0 border-borders text-primaryText">
             <div className="flex flex-col w-full h-full justify-center items-center">
+              {/* contact info */}
               <div className="text-left space-y-2">
-                <span className="flex gap-2 items-center">
-                  <Mail />
-                  <p className="font-sans text-base">
-                    jalal.ahmed.dev@gmail.com
+                <Tooltip placement="top" content="click to copy">
+                  <span className="flex gap-2 items-center">
+                    <Mail />
+                    <p
+                      className="font-sans text-base cursor-copy"
+                      onClick={() =>
+                        handleClickToCopy("jalal.ahmed.dev@gmail.com")
+                      }
+                    >
+                      jalal.ahmed.dev@gmail.com
+                    </p>
+                  </span>
+                </Tooltip>
+                <Tooltip placement="right" content="click to copy">
+                  <span className="flex gap-1 items-center w-fit">
+                    <Phone />
+                    <p
+                      className="font-sans text-base cursor-copy"
+                      onClick={() => handleClickToCopy("+8801995612420")}
+                    >
+                      +8801995612420
+                    </p>
+                  </span>
+                </Tooltip>
+                {setCopyState && (
+                  <p className="mt-4 text-base text-green-500 font-normal">
+                    {copyState}
                   </p>
-                </span>
-                <span className="flex gap-1 items-center">
-                  <Phone />
-                  <p className="font-sans text-base">+8801995612420</p>
-                </span>
+                )}
               </div>
             </div>
           </div>
+          {/* contact form */}
           <div className="px-2">
             <h2 className="text-center font-semibold text-primaryText">
               send a direct message
