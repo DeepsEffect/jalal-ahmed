@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import phoneIcon from "../../../assets/icons/phone-call.png";
 import mailIcon from "../../../assets/icons/communication.png";
+import { Mail, Phone } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -66,13 +67,15 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 ">
           <div className="font-semibold text-medium border-b pb-10 lg:pb-0 lg:border-r lg:border-b-0 border-borders text-primaryText">
             <div className="flex flex-col w-full h-full justify-center items-center">
-              <div className="text-left space-y-1">
-                <span className="flex gap-2 ">
-                  <Image src={mailIcon} width={25} height={25} alt="mail" />
-                  <p>jalal.ahmed.dev@gmail.com</p>
+              <div className="text-left space-y-2">
+                <span className="flex gap-2 items-center">
+                  <Mail />
+                  <p className="font-sans text-base">
+                    jalal.ahmed.dev@gmail.com
+                  </p>
                 </span>
-                <span className="flex gap-1">
-                  <Image src={phoneIcon} width={25} height={25} alt="phone" />
+                <span className="flex gap-1 items-center">
+                  <Phone />
                   <p className="font-sans text-base">+8801995612420</p>
                 </span>
               </div>

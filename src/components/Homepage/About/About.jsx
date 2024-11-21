@@ -15,7 +15,7 @@ const About = () => {
         }}
       >
         {/* content */}
-        <div className="py-12 min-h-[800px] px-4">
+        <div className="py-12 lg:min-h-[800px] px-4">
           <h2 className="font-bold text-4xl uppercase text-center mx-auto text-white">
             About me
           </h2>
