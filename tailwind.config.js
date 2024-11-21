@@ -28,7 +28,7 @@ module.exports = {
           // ...
           colors: {
             background: "#FFFFFF",
-            primary: "#6200EE",
+            primary: "#7C4DFF",
             secondary: "#03DAC6",
             primaryText: "#121212",
             secondaryText: "#555555",
@@ -49,7 +49,7 @@ module.exports = {
             accentColor: "#6200EE",
             highlight: "#03DAC5",
             error: "#CF6679",
-            borders: "#333333",
+            borders: "#2C2C2C",
           },
         },
         // ... custom themes
