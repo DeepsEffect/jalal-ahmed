@@ -40,6 +40,7 @@ export default function App() {
 
   return (
     <Navbar
+      className="fixed top-0 w-full z-10 "
       isBordered={true}
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}

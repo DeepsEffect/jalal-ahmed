@@ -83,8 +83,8 @@ const Contact = () => {
               {/* contact info */}
               <div className="text-left space-y-2">
                 <Tooltip placement="top" content="click to copy">
-                  <span className="flex gap-2 items-center">
-                    <Mail />
+                  <span className="flex gap-2 items-center group">
+                    <Mail className="group-hover:shadow-sm group-hover:shadow-primary transition-shadow duration-300" />
                     <p
                       className="font-sans text-base cursor-copy"
                       onClick={() =>
@@ -96,8 +96,8 @@ const Contact = () => {
                   </span>
                 </Tooltip>
                 <Tooltip placement="right" content="click to copy">
-                  <span className="flex gap-1 items-center w-fit">
-                    <Phone />
+                  <span className="flex gap-1 items-center w-fit group">
+                    <Phone className="group-hover:shadow-sm group-hover:shadow-primary transition-shadow duration-300" />
                     <p
                       className="font-sans text-base cursor-copy"
                       onClick={() => handleClickToCopy("+8801995612420")}

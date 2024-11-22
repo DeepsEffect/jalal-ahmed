@@ -5,7 +5,7 @@ import React from "react";
 
 const SkillLogo = ({ src, alt, hardIcon }) => {
   return (
-    <Card className="p-2 lg:p-4 hover:shadow-sm hover:shadow-primary">
+    <Card className="p-2 lg:p-4 hover:shadow-sm hover:shadow-primary transition-shadow duration-300">
       <CardBody>
         {src && (
           <Image
@@ -16,8 +16,8 @@ const SkillLogo = ({ src, alt, hardIcon }) => {
             height={50}
           />
         )}
-        {hardIcon === 'githubIcon' && (
-          <Github strokeWidth={1.25} size={50} className="mx-auto"/>
+        {hardIcon === "githubIcon" && (
+          <Github strokeWidth={1.25} size={50} className="mx-auto" />
         )}
         <h2 className="text-center font-bold mt-1">{alt}</h2>
       </CardBody>
