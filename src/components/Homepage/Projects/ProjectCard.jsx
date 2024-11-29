@@ -53,16 +53,12 @@ const ProjectCard = ({ project }) => {
             <Swiper
               spaceBetween={30}
               centeredSlides={true}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
               pagination={{
                 clickable: true,
               }}
               navigation={true}
               //   loop={true}
-              modules={[Autoplay, Pagination, Navigation]}
+              modules={[Pagination, Navigation]}
               className="mySwiper"
             >
               {images?.map((img, idx) => (
