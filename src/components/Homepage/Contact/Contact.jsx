@@ -2,7 +2,7 @@
 import { Button, Input, Textarea, Tooltip } from "@nextui-org/react";
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Send } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -76,41 +76,56 @@ const Contact = () => {
       <h2 className="text-4xl font-bold text-center mb-10 text-primaryText uppercase">
         Contact Me
       </h2>
-      <section className="w-full lg:container min-h-[600px] flex flex-col justify-center mx-auto rounded-md shadow-sm shadow-primary">
+      <section className="w-full lg:max-w-6xl min-h-[550px] flex flex-col justify-center mx-auto rounded-md shadow-sm shadow-primary">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 ">
           <div className="font-semibold text-medium border-b pb-10 lg:pb-0 lg:border-r lg:border-b-0 border-borders text-primaryText">
             <div className="flex flex-col w-full h-full justify-center items-center">
               {/* contact info */}
-              <div className="text-left space-y-2">
-                <Tooltip placement="top" content="click to copy">
-                  <span className="flex gap-2 items-center group">
-                    <Mail className="group-hover:shadow-sm group-hover:shadow-primary transition-shadow duration-300" />
-                    <p
-                      className="font-sans text-base cursor-copy"
-                      onClick={() =>
-                        handleClickToCopy("jalal.ahmed.dev@gmail.com")
-                      }
-                    >
-                      jalal.ahmed.dev@gmail.com
-                    </p>
-                  </span>
-                </Tooltip>
-                <Tooltip placement="right" content="click to copy">
-                  <span className="flex gap-1 items-center w-fit group">
-                    <Phone className="group-hover:shadow-sm group-hover:shadow-primary transition-shadow duration-300" />
-                    <p
-                      className="font-sans text-base cursor-copy"
-                      onClick={() => handleClickToCopy("+8801995612420")}
-                    >
-                      +8801995612420
-                    </p>
-                  </span>
-                </Tooltip>
-                {setCopyState && (
-                  <p className="mt-4 text-base text-green-500 font-normal">
-                    {copyState}
-                  </p>
-                )}
+              <div className="relative">
+                <div className="text-left space-y-2">
+                  <Tooltip placement="top" content="click to copy">
+                    <span className="flex gap-2 items-center group">
+                      <Button
+                        size="sm"
+                        variant="flat"
+                        isIconOnly
+                        className="transition-shadow duration-300 ease-in-out group-hover:shadow-lg group-hover:shadow-primary/50"
+                      >
+                        <Mail />
+                      </Button>
+                      <p
+                        className="font-sans text-base cursor-copy"
+                        onClick={() =>
+                          handleClickToCopy("jalal.ahmed.dev@gmail.com")
+                        }
+                      >
+                        jalal.ahmed.dev@gmail.com
+                      </p>
+                    </span>
+                  </Tooltip>
+                  <Tooltip placement="right" content="click to copy">
+                    <span className="flex gap-1 items-center w-fit group">
+                      <Button
+                        size="sm"
+                        variant="flat"
+                        isIconOnly
+                        className="transition-shadow duration-300 ease-in-out group-hover:shadow-lg group-hover:shadow-primary/50"
+                      >
+                        <Phone />
+                      </Button>
+                      <p
+                        className="font-sans text-base cursor-copy"
+                        onClick={() => handleClickToCopy("+8801995612420")}
+                      >
+                        +8801995612420
+                      </p>
+                    </span>
+                  </Tooltip>
+                </div>
+                {/* text copy indicator */}
+                <span className="absolute top-20 left-0 text-base text-green-500 font-normal">
+                  {setCopyState && <p>{copyState}</p>}
+                </span>
               </div>
             </div>
           </div>
@@ -162,6 +177,7 @@ const Contact = () => {
                 disabled={loading}
                 isLoading={loading}
               >
+                <Send size={20}/>
                 {loading ? "Sending..." : "Send Message"}
               </Button>
             </form>

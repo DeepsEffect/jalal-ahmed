@@ -97,10 +97,10 @@ const Introduction = () => {
             }
           >
             <Button
-              color="default"
-              size="sm lg:md"
-              variant="faded"
-              className="uppercase font-semibold transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-primary/50"
+              color="primary"
+              size="md"
+              variant="flat"
+              className="font-semibold lg:font-bold border-primary"
             >
               <SquareArrowOutUpRight size={20} />
               View Resume
