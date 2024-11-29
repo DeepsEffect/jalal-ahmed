@@ -1,36 +1,36 @@
 "use client";
-import { Switch } from "@nextui-org/react";
-import { useTheme } from "next-themes";
-import React, { useEffect, useState } from "react";
-import { SunIcon } from "./SunIcon";
-import { MoonIcon } from "./MoonIcon";
 
-const SwitchMode = () => {
+import React, { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
+import { Button } from "@nextui-org/react";
+import { Moon, Sun } from "lucide-react";
+
+const ThemeSwitch = () => {
+  const { theme, setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+    if (!theme) {
+      setTheme("dark");
+    }
+  }, [theme, setTheme]);
 
-  if (!mounted) return null;
+  if (!mounted) {
+    return null;
+  }
+  const isDarkTheme = theme === "dark" || (!theme && resolvedTheme === "dark");
+
   return (
-    <div>
-      <Switch
-        isSelected={theme === "dark"}
-        onValueChange={() => setTheme(theme === "dark" ? "light" : "dark")}
-        size="sm"
-        color="primary"
-        thumbIcon={({ isSelected, className }) =>
-          isSelected ? (
-            <SunIcon className={className} />
-          ) : (
-            <MoonIcon className={className} />
-          )
-        }
-      />
-    </div>
+    <Button
+      isIconOnly
+      size="sm"
+      onClick={() => setTheme(isDarkTheme ? "light" : "dark")}
+      aria-label="Toggle Theme"
+    >
+      {isDarkTheme ? <Sun size={20} /> : <Moon size={20} />}
+    </Button>
   );
 };
 
-export default SwitchMode;
+export default ThemeSwitch;

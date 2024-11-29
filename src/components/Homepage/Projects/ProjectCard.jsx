@@ -91,12 +91,7 @@ const ProjectCard = ({ project }) => {
                 <div className="flex gap-2 flex-wrap ">
                   <span className="font-bold">Technologies:</span>
                   {technologies?.map((tech) => (
-                    <Chip
-                      size="sm lg:md"
-                      key={tech}
-                      color="default"
-                      variant="faded"
-                    >
+                    <Chip size="md" key={tech} color="default" variant="faded">
                       {tech}
                     </Chip>
                   ))}
@@ -114,12 +109,12 @@ const ProjectCard = ({ project }) => {
                   <Link href={liveDemoLink} target="_blank">
                     <Button
                       color="primary"
-                      size="sm lg:md"
+                      size="md"
                       variant="flat"
                       className="font-semibold lg:font-bold border-primary w-full"
                     >
                       <Globe size={20} />
-                      website
+                      Website
                     </Button>
                   </Link>
                 </Tooltip>
@@ -129,7 +124,7 @@ const ProjectCard = ({ project }) => {
                   <Link href={SourceRepoLink} target="_blank">
                     <Button
                       color="primary"
-                      size="sm lg:md"
+                      size="md"
                       variant="flat"
                       className="font-semibold lg:font-bold border-primary w-full"
                     >
@@ -144,7 +139,7 @@ const ProjectCard = ({ project }) => {
                   <Link href={clientRepoLink} target="_blank">
                     <Button
                       color="primary"
-                      size="sm lg:md"
+                      size="md"
                       variant="flat"
                       className="font-semibold lg:font-bold border-primary w-full"
                     >
@@ -159,7 +154,7 @@ const ProjectCard = ({ project }) => {
                   <Link href={serverRepoLink} target="_blank">
                     <Button
                       color="primary"
-                      size="sm lg:md"
+                      size="md"
                       variant="flat"
                       className="font-semibold lg:font-bold border-primary w-full"
                     >

@@ -74,13 +74,6 @@ export default function App() {
           </Link>
         </NavbarBrand>
 
-        {/* Theme switch for desktop view */}
-        <NavbarItem>
-          <Providers>
-            <SwitchMode />
-          </Providers>
-        </NavbarItem>
-
         {menuItems.map((menuItem) => (
           <NavbarItem
             className="cursor-pointer hover:opacity-80"
@@ -99,6 +92,12 @@ export default function App() {
             </ScrollLink>
           </NavbarItem>
         ))}
+        {/* Theme switch for desktop view */}
+        <NavbarItem>
+          <Providers>
+            <SwitchMode />
+          </Providers>
+        </NavbarItem>
       </NavbarContent>
 
       <NavbarMenu className=" text-center ">
