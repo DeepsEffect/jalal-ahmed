@@ -37,7 +37,7 @@ const Introduction = () => {
                   isIconOnly
                   color="default"
                   aria-label="github"
-                  className="text-white hover:shadow-sm hover:shadow-primary"
+                  className="text-white transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-primary/50"
                 >
                   <FaGithub className="text-2xl" />
                 </Button>
@@ -54,7 +54,7 @@ const Introduction = () => {
                   size="sm"
                   color="default"
                   aria-label="linkedin"
-                  className="text-white hover:shadow-sm hover:shadow-primary"
+                  className="text-white transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-primary/50"
                 >
                   <FaLinkedin className="text-2xl" />
                 </Button>
@@ -68,7 +68,7 @@ const Introduction = () => {
                   isIconOnly
                   color="default"
                   aria-label="twitter"
-                  className="text-white hover:shadow-sm hover:shadow-primary"
+                  className="text-white transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-primary/50"
                 >
                   <FaXTwitter className="text-2xl" />
                 </Button>
@@ -82,7 +82,7 @@ const Introduction = () => {
                   isIconOnly
                   color="default"
                   aria-label="mail"
-                  className="text-white hover:shadow-sm hover:shadow-primary"
+                  className="text-white transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-primary/50"
                 >
                   <Mail className="text-2xl" />
                 </Button>
@@ -100,7 +100,7 @@ const Introduction = () => {
               color="default"
               size="sm lg:md"
               variant="faded"
-              className="uppercase font-semibold hover:shadow-sm hover:shadow-primary"
+              className="uppercase font-semibold transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-primary/50"
             >
               <SquareArrowOutUpRight size={20} />
               View Resume
@@ -111,7 +111,7 @@ const Introduction = () => {
         <Tooltip content="scroll down">
           <Mouse
             size={28}
-            className="animate-scroll absolute bottom-28 transform -translate-x-1/2"
+            className="animate-scroll absolute bottom-28 transform -translate-x-1/2 text-white"
           />
         </Tooltip>
       </section>
