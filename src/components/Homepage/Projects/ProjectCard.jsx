@@ -13,7 +13,7 @@ import {
   Tooltip,
 } from "@nextui-org/react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 import "./styles.css";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -99,7 +99,7 @@ const ProjectCard = ({ project }) => {
           <Divider />
 
           <CardFooter>
-            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-full justify-between gap-2">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2 w-full">
               {liveDemoLink && (
                 <Tooltip content="live demo website link">
                   <Link href={liveDemoLink} target="_blank">
@@ -107,10 +107,10 @@ const ProjectCard = ({ project }) => {
                       color="primary"
                       size="md"
                       variant="flat"
-                      className="font-semibold lg:font-bold border-primary w-full"
+                      className="font-semibold lg:font-bold w-full"
                     >
-                      <Globe size={20} />
-                      Website
+                      <Globe size={20} className="hidden md:flex" />
+                      <span>Website</span>
                     </Button>
                   </Link>
                 </Tooltip>
@@ -122,10 +122,10 @@ const ProjectCard = ({ project }) => {
                       color="primary"
                       size="md"
                       variant="flat"
-                      className="font-semibold lg:font-bold border-primary w-full"
+                      className="font-semibold lg:font-bold w-full"
                     >
-                      <Github size={20} />
-                      Source
+                      <Github className="hidden md:flex" size={20} />
+                      <span>Source</span>
                     </Button>
                   </Link>
                 </Tooltip>
@@ -137,10 +137,10 @@ const ProjectCard = ({ project }) => {
                       color="primary"
                       size="md"
                       variant="flat"
-                      className="font-semibold lg:font-bold border-primary w-full"
+                      className="font-semibold lg:font-bold w-full"
                     >
-                      <Github size={20} />
-                      Source Client
+                      <Github className="hidden md:flex" size={20} />
+                      <span>Source Client</span>
                     </Button>
                   </Link>
                 </Tooltip>
@@ -152,10 +152,10 @@ const ProjectCard = ({ project }) => {
                       color="primary"
                       size="md"
                       variant="flat"
-                      className="font-semibold lg:font-bold border-primary w-full"
+                      className="font-semibold lg:font-bold w-full"
                     >
-                      <Github size={20} />
-                      Source Server
+                      <Github className="hidden md:flex" size={20} />
+                      <span>Source Server</span>
                     </Button>
                   </Link>
                 </Tooltip>
