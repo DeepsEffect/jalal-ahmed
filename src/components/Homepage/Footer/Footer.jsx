@@ -7,7 +7,7 @@ export const Footer = () => {
     <footer className="mt-20">
       <Card radius="none" className="w-full">
         <CardBody>
-          <section className="text-center space-y-2">
+          <section className="text-center space-y-4">
             <ul className="flex gap-6 items-center justify-center font-semibold text-primaryText ">
               <Link
                 target="_blank"

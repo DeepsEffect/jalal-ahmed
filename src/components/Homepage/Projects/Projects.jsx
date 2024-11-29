@@ -10,7 +10,7 @@ const Projects = () => {
         My Projects
       </h2>
       {/* projects showcase */}
-      <section className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      <section className="lg:max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {projects?.map((project) => (
           <ProjectCard project={project} key={project.id} />
         ))}

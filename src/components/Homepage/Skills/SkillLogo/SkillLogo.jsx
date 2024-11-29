@@ -1,26 +1,35 @@
-import { Card, CardBody } from "@nextui-org/react";
+import { Button, Card, CardBody, Grid } from "@nextui-org/react";
 import { Github } from "lucide-react";
 import Image from "next/image";
-import React from "react";
 
-const SkillLogo = ({ src, alt, hardIcon }) => {
+const SkillLogo = ({ src, alt, hardIcon, desc }) => {
   return (
-    <Card className="p-2 lg:p-4 hover:shadow-sm hover:shadow-primary transition-shadow duration-300">
-      <CardBody>
+    <Card className="flex flex-row items-center px-4 min-h-[120px]">
+      <Button
+        disableRipple
+        disableAnimation
+        variant="solid"
+        size="lg"
+        isIconOnly
+        className="mr-4 cursor-default p-2 hover:bg-none focus:outline-none active:bg-none active:scale-100 pointer-events-none"
+      >
         {src && (
           <Image
             className="mx-auto"
             src={src}
             alt={alt}
-            width={50}
-            height={50}
+            width={40}
+            height={40}
           />
         )}
         {hardIcon === "githubIcon" && (
-          <Github strokeWidth={1.25} size={50} className="mx-auto" />
+          <Github strokeWidth={1.25} size={40} className="mx-auto" />
         )}
-        <h2 className="text-center font-bold mt-1">{alt}</h2>
-      </CardBody>
+      </Button>
+      <div>
+        <h3 className="text-base font-semibold">{alt}</h3>
+        <p className="text-secondaryText text-sm w-full">{desc}</p>
+      </div>
     </Card>
   );
 };

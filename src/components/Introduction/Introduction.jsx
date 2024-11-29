@@ -100,7 +100,7 @@ const Introduction = () => {
               color="primary"
               size="md"
               variant="flat"
-              className="font-semibold lg:font-bold border-primary"
+              className="font-semibold lg:font-bold border-primary "
             >
               <SquareArrowOutUpRight size={20} />
               View Resume

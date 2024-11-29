@@ -25,13 +25,14 @@ const About = () => {
               src="./profile.jpg"
               className="w-36 h-36 text-large mx-auto object-cover box-border"
             />
-            <p className="text-white text-base md:text-lg font-medium text-center max-w-2xl mx-auto break-words whitespace-normal">
+            <p className="text-white text-base md:text-lg font-medium text-left max-w-2xl mx-auto break-words whitespace-normal">
               I&apos;m a 22-year-old developer based in Bangladesh 🇧🇩,
-              practicing web development for almost a year. During this time,
-              I&apos;ve worked with various technologies and built several
-              projects. Currently, I&apos;m focused on front-end development and
-              am looking for an internship to apply my skills and grow as a
-              developer within a team environment.
+              practicing web development for a year now. I mainly work with
+              technologies like React, Next.js, TailwindCSS, and TypeScript.
+              Currently, I&apos;m focused on building my experience in front-end
+              development. I&apos;m open to opportunities to work in a team
+              environment, contribute to meaningful projects, and grow as a
+              developer.
             </p>
           </div>
         </div>

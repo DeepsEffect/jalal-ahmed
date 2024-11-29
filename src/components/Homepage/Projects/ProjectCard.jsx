@@ -48,7 +48,7 @@ const ProjectCard = ({ project }) => {
         glareBorderRadius="20px"
         className="h-full"
       >
-        <Card className="border border-borders shadow-sm shadow-primary h-full w-full flex flex-col lg:p-6">
+        <Card className="shadow-sm shadow-primary h-full w-full flex flex-col lg:p-6">
           <CardHeader className="p-0">
             <Swiper
               spaceBetween={30}
@@ -87,7 +87,7 @@ const ProjectCard = ({ project }) => {
                 <div className="flex gap-2 flex-wrap ">
                   <span className="font-bold">Technologies:</span>
                   {technologies?.map((tech) => (
-                    <Chip size="md" key={tech} color="default" variant="faded">
+                    <Chip size="sm" key={tech} color="default" variant="faded">
                       {tech}
                     </Chip>
                   ))}
@@ -99,7 +99,7 @@ const ProjectCard = ({ project }) => {
           <Divider />
 
           <CardFooter>
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 w-full">
               {liveDemoLink && (
                 <Tooltip content="live demo website link">
                   <Link href={liveDemoLink} target="_blank">
@@ -109,7 +109,7 @@ const ProjectCard = ({ project }) => {
                       variant="flat"
                       className="font-semibold lg:font-bold w-full"
                     >
-                      <Globe size={20} className="hidden md:flex" />
+                      <Globe size={20} />
                       <span>Website</span>
                     </Button>
                   </Link>
@@ -124,7 +124,7 @@ const ProjectCard = ({ project }) => {
                       variant="flat"
                       className="font-semibold lg:font-bold w-full"
                     >
-                      <Github className="hidden md:flex" size={20} />
+                      <Github size={20} />
                       <span>Source</span>
                     </Button>
                   </Link>
@@ -139,7 +139,7 @@ const ProjectCard = ({ project }) => {
                       variant="flat"
                       className="font-semibold lg:font-bold w-full"
                     >
-                      <Github className="hidden md:flex" size={20} />
+                      <Github size={20} />
                       <span>Source Client</span>
                     </Button>
                   </Link>
@@ -154,7 +154,7 @@ const ProjectCard = ({ project }) => {
                       variant="flat"
                       className="font-semibold lg:font-bold w-full"
                     >
-                      <Github className="hidden md:flex" size={20} />
+                      <Github size={20} />
                       <span>Source Server</span>
                     </Button>
                   </Link>
