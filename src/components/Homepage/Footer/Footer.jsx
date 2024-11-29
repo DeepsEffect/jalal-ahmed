@@ -8,24 +8,24 @@ export const Footer = () => {
       <Card radius="none" className="w-full">
         <CardBody>
           <section className="text-center space-y-2">
-            <ul className="flex gap-4 items-center justify-center font-semibold text-primaryText ">
+            <ul className="flex gap-6 items-center justify-center font-semibold text-primaryText ">
               <Link
                 target="_blank"
-                className="hover:underline hover:text-secondaryText"
+                className="text-secondaryText hover:underline hover:decoration-primary hover:text-primaryText"
                 href={"https://github.com/DeepsEffect"}
               >
                 GitHub
               </Link>
               <Link
                 target="_blank"
-                className="hover:underline hover:text-secondaryText"
+                className="text-secondaryText hover:underline hover:decoration-primary hover:text-primaryText"
                 href={"https://www.linkedin.com/in/jalal-ahmed-dev"}
               >
                 Linkedin
               </Link>
               <Link
                 target="_blank"
-                className="hover:underline hover:text-secondaryText"
+                className="text-secondaryText hover:underline hover:decoration-primary hover:text-primaryText"
                 href={"https://x.com/JalalAhmed7845"}
               >
                 Twitter/X
@@ -35,23 +35,23 @@ export const Footer = () => {
               Built with{" "}
               <Link
                 target="_blank"
-                className="hover:font-semibold hover:underline"
-                href="https://nextjs.org/docs"
+                className="text-secondaryText hover:underline hover:decoration-primary hover:text-primaryText"
+                href="https://nextjs.org"
               >
                 Next.js
               </Link>
               ,{" "}
               <Link
                 target="_blank"
-                className="hover:font-semibold hover:underline"
-                href="https://nextui.org/docs/guide/introduction"
+                className="text-secondaryText hover:underline hover:decoration-primary hover:text-primaryText"
+                href="https://nextui.org"
               >
                 NextUI
               </Link>
               ,
               <Link
                 target="_blank"
-                className="hover:font-semibold hover:underline"
+                className="text-secondaryText hover:underline hover:decoration-primary hover:text-primaryText"
                 href="https://tailwindcss.com"
               >
                 {" "}
@@ -60,8 +60,8 @@ export const Footer = () => {
               , and{" "}
               <Link
                 target="_blank"
-                className="hover:font-semibold hover:underline"
-                href="https://vercel.com/home"
+                className="text-secondaryText hover:underline hover:decoration-primary hover:text-primaryText "
+                href="https://vercel.com"
               >
                 Vercel
               </Link>
