@@ -28,11 +28,11 @@ const About = () => {
             <p className="text-white text-base md:text-lg font-medium text-left max-w-2xl mx-auto break-words whitespace-normal">
               I&apos;m a 22-year-old developer based in Bangladesh 🇧🇩,
               practicing web development for a year now. I mainly work with
-              technologies like React, Next.js, TailwindCSS, and TypeScript.
-              Currently, I&apos;m focused on building my experience in front-end
-              development. I&apos;m open to opportunities to work in a team
-              environment, contribute to meaningful projects, and grow as a
-              developer.
+              technologies like React, Next.js, TailwindCSS, TypeScript, and
+              NoSQL databases like MongoDB. Currently, I&apos;m focused on
+              building my experience in front-end development. I&apos;m open to
+              opportunities to work in a team environment, contribute to
+              meaningful projects, and grow as a developer.
             </p>
           </div>
         </div>

@@ -76,7 +76,7 @@ const Contact = () => {
       <h2 className="text-4xl font-bold text-center mb-10 text-primaryText uppercase">
         Contact Me
       </h2>
-      <card className="w-full lg:max-w-6xl min-h-[550px] flex flex-col justify-center mx-auto rounded-md shadow-sm shadow-primary">
+      <card className="w-full lg:max-w-6xl min-h-[502px] flex flex-col justify-center mx-auto rounded-md shadow-sm shadow-primary">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 ">
           <div className="font-semibold text-medium border-b pb-10 lg:pb-0 lg:border-r lg:border-b-0 border-borders text-primaryText">
             <div className="flex flex-col w-full h-full justify-center items-center">

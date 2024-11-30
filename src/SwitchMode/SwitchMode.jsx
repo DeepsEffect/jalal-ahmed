@@ -24,6 +24,7 @@ const ThemeSwitch = () => {
   return (
     <Button
       isIconOnly
+      variant="light"
       size="sm"
       onClick={() => setTheme(isDarkTheme ? "light" : "dark")}
       aria-label="Toggle Theme"

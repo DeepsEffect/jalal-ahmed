@@ -11,12 +11,12 @@ const Skills = () => {
     {
       name: "CSS",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-      desc: "Style sheet language for web presentation",
+      desc: "Style and layout of web pages",
     },
     {
       name: "JavaScript",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg",
-      desc: "Dynamic programming language for web",
+      desc: "programming language for the Web",
     },
     {
       name: "TypeScript",
@@ -26,12 +26,12 @@ const Skills = () => {
     {
       name: "React.js",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      desc: "Library for building user interfaces",
+      desc: "Library for building web interfaces",
     },
     {
       name: "Next.js",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      desc: "React framework for server-rendered apps",
+      desc: "Framework for server-rendered React apps",
     },
     {
       name: "Tailwind CSS",
@@ -56,12 +56,12 @@ const Skills = () => {
     {
       name: "Shadcn UI",
       logo: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4",
-      desc: "Accessible React component library",
+      desc: "Highly customizable component library",
     },
     {
       name: "NextUI",
       logo: "https://raw.githubusercontent.com/nextui-org/nextui/main/apps/docs/public/isotipo.png",
-      desc: "React UI library for modern interfaces",
+      desc: "Beautiful, fast, and modern React UI library",
     },
     {
       name: "Figma",
@@ -76,7 +76,7 @@ const Skills = () => {
     {
       name: "GitHub",
       hardIcon: "githubIcon",
-      desc: "Web-based hosting for Git",
+      desc: "Platform for hosting and managing Git repos",
     },
     {
       name: "npm",

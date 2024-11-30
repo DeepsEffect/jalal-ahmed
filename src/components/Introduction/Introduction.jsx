@@ -35,7 +35,6 @@ const Introduction = () => {
                   size="sm"
                   variant="light"
                   isIconOnly
-                  color="default"
                   aria-label="github"
                   className="text-white transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-primary/50"
                 >
@@ -52,7 +51,6 @@ const Introduction = () => {
                   variant="light"
                   isIconOnly
                   size="sm"
-                  color="default"
                   aria-label="linkedin"
                   className="text-white transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-primary/50"
                 >
@@ -66,7 +64,6 @@ const Introduction = () => {
                   size="sm"
                   variant="light"
                   isIconOnly
-                  color="default"
                   aria-label="twitter"
                   className="text-white transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-primary/50"
                 >
@@ -80,7 +77,6 @@ const Introduction = () => {
                   size="sm"
                   variant="light"
                   isIconOnly
-                  color="default"
                   aria-label="mail"
                   className="text-white transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-primary/50"
                 >
