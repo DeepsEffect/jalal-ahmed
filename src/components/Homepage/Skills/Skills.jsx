@@ -16,7 +16,7 @@ const Skills = () => {
     {
       name: "JavaScript",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg",
-      desc: "programming language for the Web",
+      desc: "Programming language for the Web",
     },
     {
       name: "TypeScript",

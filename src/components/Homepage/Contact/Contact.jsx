@@ -132,7 +132,7 @@ const Contact = () => {
           {/* contact form */}
           <div className="px-2">
             <h2 className="text-center font-semibold text-primaryText">
-              send a direct message
+              Send a direct message
             </h2>
             <form
               onSubmit={handleSubmit}
