@@ -8,7 +8,7 @@ const SkillLogo = ({ src, alt, hardIcon, desc }) => {
       <Button
         disableRipple
         disableAnimation
-        variant="solid"
+        variant="flat"
         size="lg"
         isIconOnly
         className="mr-4 cursor-default p-2 hover:bg-none focus:outline-none active:bg-none active:scale-100 pointer-events-none"
